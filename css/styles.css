@@ -1,1 +1,62 @@
 /* file css */
+
+.main-header {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-section {
+    width: 28%;
+}
+
+footer {
+    text-align: center;
+}
+
+form {
+    background-color: skyblue;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.form-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-button-container {
+    margin-top: 30px;
+}
+
+input[type=number] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    border: 0;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.bg-green-yellow {
+    background-color: greenyellow;
+}
+
+.bg-alice-blue {
+    background-color: aliceblue;
+}
+
+.color-black {
+    color: black;
+}
