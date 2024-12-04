@@ -10,7 +10,7 @@ main {
 }
 
 .main-section {
-    width: 28%;
+    width: 32%;
 }
 
 footer {
@@ -29,8 +29,16 @@ form {
     align-items: center;
 }
 
+.form-jk {
+    justify-content: left;
+}
+
 .form-button-container {
     margin-top: 30px;
+}
+
+.form-button-container-hasil {
+    margin-top: 8px;
 }
 
 input[type=number] {
@@ -47,6 +55,12 @@ button {
     border: 0;
     padding: 8px;
     border-radius: 4px;
+}
+
+.submit-hasil {
+    background-color: greenyellow;
+    color: black;
+    margin-left: 130px;
 }
 
 .bg-green-yellow {

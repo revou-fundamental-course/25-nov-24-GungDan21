@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width", initial-scale=1.0">
+    <meta name="viewport" content="width" initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css\styles.css">
 </head>
@@ -21,11 +21,20 @@
 
             <!-- Main article -->
             <article>
-                <p>Lorem Ipsum Marciantos Numero Unos Dos Trez....</p>
+                <p style="margin-bottom: 6px; text-align: justify;">Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di Kalkulator BMI.</p>
             </article>
 
             <!-- Main Form -->
             <form>
+                <!-- Selection Jenis Kelamin -->
+                <div class="form-jk">
+                    <label for="jenis-kelamin">Jenis Kelamin</label>
+                    <div id="jenis-kelamin">
+                        <label> <input type="radio" name="jenis-kelamin" value="laki-laki">Laki-laki</label>
+                        <label> <input type="radio" name="jenis-kelamin" value="perempuan">Perempuan</label>
+                    </div>
+                </div>
+
                 <div class="form-item">
                     <label for="input-berat-badan">
                         Berat Badan (kg):
@@ -48,8 +57,8 @@
                 </div>
 
                 <div class="form-button-container">
-                    <button class="bg-green-yellow color-black">Hitung BMI</button>
-                    <button class="bg-alice-blue">Reset</button>
+                    <button type="button" class="bg-green-yellow color-black">Hitung BMI</button>
+                    <button type="button" class="bg-alice-blue">Reset</button>
                 </div>
             </form>
 
@@ -57,9 +66,15 @@
             <article>
                 <header>
                     <h3>Keunggulan Fitur</h3>
-                </header>
+                    <ol type="1">
+                        <li>Menghitung berat badan.</li>
+                        <li>Menentukan berat badan ideal atau tidak.</li>
+                        <li>Mempersiapkan program penurunan berat badan.</li>
+                    </ol>
 
-                <p>Lorem Ipsum Marciantos Numero Unos Dos Trez....</p>
+                    <p style="text-align: justify;">Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengendalikan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memnuhi syarat seperti dokter.</p>
+                    <p style="text-align: justify;">Kalkulator akan memberikan gambaran pada anda mengenai pertimbangan berat badan Anda dengan nilai umum. Indeks Masa Tubuh atau BMI dihitung sebagai berat badan Anda (dalam Kilogram) dibagi dengan kuadrat tinggi badan anda (dalam Meter) atau BMI=kg/m&sup2.</p>
+                </header>
             </article>
         </section>
 
@@ -70,24 +85,51 @@
                     <h2>Hasil</h2>
                 </header>
 
-                <p>Berat Badan Lebih</p>
+                <p style="text-align: center;">Anda memiliki berat badan</p>
 
-                <div id="result-calculation">0</div>
+                <div id="result-calculation" style="text-align: center;">0</div>
 
-                <p id="info-result">Anda memiliki berat badan</p>
+                <p id="info-result" style="text-align: center;">Lihat hasil disini!</p>
+                <button type="button" class="submit-hasil">Download Hasil BMI</button>
             </div>
 
             <!-- Third Article -->
              <article>
-                <p>Lorem Ipsum Marciantos Numero Unos Dos Trez....</p>
-             </article>
-         </section>
+                <p><strong>Penjelasan hasil BMI:</strong></p>
+                <p style="margin: 0; text-align: justify;">Anda berada dalam kategori <i>overweight</i> atau berat badan berlebih.</p>
+                <p style="margin: 0; text-align: justify;">Cara terbaik untuk menurunkan berat badan adalah mengatur kalori makanan yang dikonsumsi dan rajin berolahraga.</p>
+                <p style="margin: 0; text-align: justify;">Jika BMI Anda berada dalam kategori ini maka Anda disarankan untuk menurunkan berat badan hingga batas normal.</p>
+                <p>Jika anda memiliki berat badan Normal (ideal), usahakan untuk tetap menjaga pola makan dan berat badan nya supaya tidak naik atau turun.</p>
+                <p>Sementara, jika Anda kekurangan berat badan, disarankan untuk makan makanan bergizi serta makanan yang mengandung banyak kalori. Jangan lupa diselingi olahraga dan istirahat yang cukup.</p>
+            </article>
+
+             <div class="form-button-container-hasil">
+                <button type="button" class="bg-green-yellow color-black">Konsultasi Ahli Gizi Via Aplikasi</button>
+                <button type="button" class="bg-green-yellow color-black">Registrasi Online Ahli Gizi</button>
+             </div>
+
+             <p style="text-align: justify;">BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda</p>
+             <p>Beberapa penyakit yang berasal dari kegemukan:</p>
+             <ul>
+                <li>Diabetes</li>
+                <li>Hipertensi</li>
+                <li>Sakit Jantung</li>
+                <li>Osteoarthritis</li>
+             </ul>
+
+             <div class="form-button-container-hasil">
+                <button type="button" class="bg-green-yellow color-black">Konsultasi Dokter Via Aplikasi</button>
+                <button type="button" class="bg-green-yellow color-black">Registrasi Online Sekarang</button>
+             </div>
+            </section>
     </main>
 
     <!-- footer web -->
      <footer>
         <p>Made by GungDan@2024</p>
      </footer>
+
+     <script src="js/script.js"></script>
 </body>
 
 </html>
